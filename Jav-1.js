@@ -87,7 +87,7 @@ document.querySelector('#unit-f').addEventListener('click', () => {
 
 const ville = document.querySelector('#cityName');
 ville.addEventListener('click', () => {
-    ville.contentEditable = true;
+   
 });
 ville.addEventListener('keydown', (e) => {
     if (e.keyCode === 13) {
@@ -96,17 +96,16 @@ ville.addEventListener('keydown', (e) => {
     }
 })
 
-// const button = document.querySelector('#search');
-// button.addEventListener('click', () =>{
-//     button.contentEditable = false; 
-// } );
+ const button = document.querySelector('#search');
+ button.addEventListener('click', () =>{
 
-// button.addEventListener('keydown', (e) => {
-//     if (e.keycode == 13){
-//         e.preventDefault();
-//         main(true);
-//     }
-// });
+      var input=document.getElementById('city');
+      var cityName = document.getElementById('cityName')
+      var city = input.value;
+        cityName.textContent = city;      
+      main(false);
+    }); 
+ 
 main()
 function getGPSCoords(){
     return new Promise((resolve, reject) => {

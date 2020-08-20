@@ -6,6 +6,7 @@
     <title>Weather</title>
     
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+   <link rel="stylesheet" href="http://openweathermap.org/img/wn/10d@2x.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -24,14 +25,17 @@
           <span class="navbar-toggler-icon"></span>
         </button>
                 <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Entrez votre ville">
-             <div class="button"><button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button></div>
+            <input class="form-control mr-sm-2" id="city" type="search" placeholder="Entrez votre ville">
+             <div class="button"><button id="search" class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button></div>
           </form>
         </div>
       </nav>
 </header>
 
 <body>
+
+    
+     
  <div class="degrés">  <div class="dropdown">
         <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          <p class="unité">Unité de mesure</p>
