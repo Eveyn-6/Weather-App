@@ -177,10 +177,25 @@ h1.full{
     color:#1f3f68;
 } 
 
+@import url('https://fonts.googleapis.com/css?family=Offside');
+body {
+  background-color:rgb(130, 198, 238);
+} 
 
+p {
+    font-family:'Offside', sans-serif;
+    font-size: 15px;
+    color:white;
+    text-align:center;
+    text-shadow:0 0 10px #fff;
+    float:left;
+    margin-left:30px;
+    margin-top:110psx;
+  }
 
+  #moonCanvas {
+    display:block;
+    margin:50px auto;
+    float:left
 
-
-
-
-
+  }
