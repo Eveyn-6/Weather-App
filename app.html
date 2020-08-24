@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/stylesap.css">
+</head>
+
+<header class="header">
+    <div class="img">
+        <img src="we2.png" alt="logo weather">
+    </div>  
+    <nav class="navbar navbar-expand-lg" >
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+              <div class="search"> 
+            <input class="form-control mr-sm-2" id="city" type="search" placeholder="Entrez votre ville"></div> 
+             <div class="button"><button id="search" class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button></div>
+          
+        </div>
+      </nav>
+     
+</header>
+
+<body>
+      <div class="degrés">  
+     <div class="dropdown">
+        <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <p class="unité">Unité de mesure</p>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <button class="dropdown-item" type="button" id="unit-c">Degrés celsius</button>
+          <button class="dropdown-item" type="button" id="unit-f">Degrés Fahrenheit</button>         
+        </div>
+      </div>  
+    </div>
+<i class="icons">
+    <i id="condition-icon" class="wi wi-day-sunny"></i>
+ 
+    <div class="box-container">
+
+        <h1 class="full"> <span id="cityName">city</span></h1></br>
+        <div class="box date"> <label class="titre">Date:</label> <i class="wi wi-time-12"></i> <span class="info-label" id="date"></span></br></div>
+        <div class="box"> <label class="titre">Description:</label> <span class="info-label" id="description"></span></br></div>
+        <div class="box"> <label class="titre">Température:</label> <i class="wi wi-thermometer"></i><span class="info-label" id="temperature"></span></br></div>
+        <div class="box"> <label class="titre">Humidité:</label><i class="wi wi-humidity"></i> <span class="info-label" id="humidity"></span></br></div>
+    </div>
+
+    <div class="info">
+
+        <h1 class="infos"> Informations</h1>
+        <div class="infos-container"> 
+        <div class="info-item"> <i class="wi wi-strong-wind "></i> <label class="titres">vent: </label> <span class="info-label" id="wind"></span></div>
+        <div class="info-item"> <i class="wi wi-direction-up-right"></i> <label class="titres">Direction du vent: </label><span class="info-label" id="direction"></span></div>
+        <div class="info-item"> <i class="wi wi-barometer"></i> <label class="titres">Pression atmosphérique:</label> <span class="info-label" id="pressure"></span></div> 
+        <div class="info-item"> <i class="wi wi-direction-up"></i> <label class="titres">Température max:</label><span class="info-label" id="tempMax"></span></div> 
+        <div class="info-item"> <i class="wi wi-direction-down"></i> <label class="titres">Température min: </label><span class="info-label" id="tempMin"></span></div>
+        <div class="info-item"> <i class="wi wi-sunset"></i> <label class="titres">Crépuscule: </label></i><span class="info-label" id="sunset"></span></div>
+        <div class="info-item"> <i class="wi wi-sunrise"></i> <label class="titres">Aube: </label><span class="info-label" id="sunrise"></span></div>
+        
+    </div>
+     
+</body>
+
+<!-- <script type="text/javascript">
+    alert('Vendredi 21/08/2020; 8h00 Bon courage pour le télétravail! :)')</script>
+ <script type="text/javascript">
+    alert('Vendredi 21/08/2020; 12h; fin du télétravail projet presque finis!')</script> -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+    <script src="Jav-1.js"></script>
+</html>

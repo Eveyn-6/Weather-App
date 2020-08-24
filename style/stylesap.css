@@ -1,6 +1,9 @@
-.header{
+.header-top{
+    display: flex;
+}
+header{
     background-color:#32448673 ;
-
+    
 }
 
 .img{
@@ -18,11 +21,40 @@ img{
     margin-bottom: 100px;  
 }
 
-.degrés{    
-    display: flex;
-   justify-content: flex-end;
-      
+@import url('https://fonts.googleapis.com/css?family=Offside');
+ 
+
+.moon-p{
+    font-family:'Offside', sans-serif;
+    font-size: 15px;
+    color:#e7d88ab3;
+    text-align:center;
+    text-shadow:0 0 10px #fff;
+    float:left;
+   
+  }
+
+   #moonCanvas {  
+    display: block;
+    width:100%;
+  }
+
+  .moon-container {
+    
+    margin-left: 1250px;
+    float: left;
+    background: #3b409769;
+    padding: 20px;
+    border-radius: 50%;
+    width: 100px;
+     
 }
+.current-temperature{    
+    display: flex;
+    justify-content: flex-end;
+}
+ 
+ 
 
 body {
     background-image: url( https://ak.picdn.net/shutterstock/videos/23151766/thumb/1.jpg);
@@ -65,7 +97,6 @@ body.snow .info{
 
 
  
-
 .box-container{
     width: 300px;
     display: flex;
@@ -102,13 +133,12 @@ h1.full{
     margin-left: 20px;
 }
 
-.box-container i
-{
+.box-container i{
     font-size: 30px;
     color: rgb(190, 63, 31);
 }
 
-.box{
+.current-weather{
     width: 146px;
     height: 154px;
     display: flex;
@@ -119,11 +149,11 @@ h1.full{
     margin: 2px;
 }
 
-.box.date{
+.current-weather.date{
     background-color: #ce67438c;
 }
 
-.box {
+.current-weather {
     background-color: #eb9d43b0;
 }
 
@@ -174,23 +204,3 @@ h1.full{
     color:#1f3f68;
 } 
 
-@import url('https://fonts.googleapis.com/css?family=Offside');
- 
-
-p {
-    font-family:'Offside', sans-serif;
-    font-size: 15px;
-    color:white;
-    text-align:center;
-    text-shadow:0 0 10px #fff;
-    float:left;
-    margin-left:30px;
-    margin-top:110psx;
-  }
-
-  #moonCanvas {
-    display:block;
-    margin:50px auto;
-    float:left
-
-  }
