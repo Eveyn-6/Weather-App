@@ -48,7 +48,8 @@ img{
     background: #3b409769;
     padding: 20px;
     border-radius: 50%;
-    width: 100px;     
+    width: 100px;
+     
 }
 
 .current-temperature{    
@@ -187,11 +188,14 @@ h1.full{
  }
 
  .current-weather .info-label{
-     font-size: 25px;
+     font-weight: bold;
+     font-size: 15px;
  }
 
 #temperature,
 #humidity{
+    font-size: 20px;
+    font-weight: bold;
     color:#1f3f68;
 } 
 

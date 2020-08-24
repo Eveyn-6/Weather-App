@@ -283,7 +283,7 @@ function initLunarPhase(){
       ctx.fillStyle=$ovalColor;
       ctx.fill();
     }
-  };
+  } 
   
   
   initLunarPhase();
