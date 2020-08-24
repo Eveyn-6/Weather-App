@@ -63,11 +63,8 @@ body.snow .info{
     background-color: #fffbf481;
 }     
 
+
  
-.input{
-    margin-top: 40px;
-    margin-left: 40px;
- }
 
 .box-container{
     width: 300px;
@@ -178,9 +175,7 @@ h1.full{
 } 
 
 @import url('https://fonts.googleapis.com/css?family=Offside');
-body {
-  background-color:rgb(130, 198, 238);
-} 
+ 
 
 p {
     font-family:'Offside', sans-serif;
