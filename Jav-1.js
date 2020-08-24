@@ -183,7 +183,7 @@ function formatDate(dateTimestampInSeconds, bDisplayDate){
 
     }
     else {
-        return (heure + "h" + minutes + " s " + seconds)
+        return (heure + "h" + minutes)
     }
 
 

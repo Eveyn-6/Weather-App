@@ -38,24 +38,29 @@
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="search">
-                <input class="form-control mr-sm-2" id="city" type="search" placeholder="Entrez votre ville"></div>
-            <div class="button"><button id="search" class="btn btn-outline-warning my-2 my-sm-0"
-                    type="submit">Search</button></div>
-        </nav>
-
-        <div class="current-temperature">
-            <div class="dropdown">
-                <button class="btn btn-outline-warning dropdown-toggle" type="button" id="dropdownMenu2"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <p class="unité">Unité de mesure</p>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <button class="dropdown-item" type="button" id="unit-c">Degrés celsius</button>
-                    <button class="dropdown-item" type="button" id="unit-f">Degrés Fahrenheit</button>
+            <div class="d-flex justify-content-between w-100">
+                <div class="search">
+                    <input class="form-control mr-sm-2" id="city" type="search" placeholder="Entrez votre ville">
+                    <div class="button">
+                        <button id="search" class="btn btn-outline-warning my-2 my-sm-0"  type="submit">Search</button>
+                    </div>
+                </div>
+                <div class="current-conditions">
+                    <div class="menu">
+                        <button class="btn btn-outline-warning dropdown-toggle" type="button" id="dropdownMenu2"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p class="unité">Unité de mesure</p>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button" id="unit-c">Degrés celsius</button>
+                            <button class="dropdown-item" type="button" id="unit-f">Degrés Fahrenheit</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </nav>
+
+        
     </div>
 </header>
 
@@ -64,7 +69,7 @@
         <i id="condition-icon" class="wi wi-day-sunny"></i>
     </i>
 
-    <div class="box-container">
+    <div class="current-WeatherContainer">
 
         <h1 class="full"> <span id="cityName">city</span></h1></br>
 
@@ -92,58 +97,56 @@
         
     </div>
 
-    <div class="info">
-        <h1 class="infos"> Informations</h1>
-        <div class="infos-container">
+   
+        <h1 class="weatherinfos">Conditions météo du jour: </h1>
+        
+        <div class="conditions-infos">
             <div class="info-item"> 
                 <i class="wi wi-strong-wind "></i> 
-                <label class="titres">vent: </label>
+                <label class="condition">vent: </label>
                 <span class="info-label" id="wind"></span>
             </div>
 
-            <div class="info-item"> 
+            <div class="dayConditions"> 
                 <i class="wi wi-direction-up-right"></i> 
-                <label class="titres">Direction du vent:</label>
+                <label class="condition">Direction du vent:</label>
                 <span class="info-label" id="direction"></span>
             </div>
 
-            <div class="info-item">
+            <div class="dayConditions">
                  <i class="wi wi-barometer"></i> 
-                 <label class="titres">Pression atmosphérique:</label> 
+                 <label class="condition">Pression atmosphérique:</label> 
                 <span class="info-label" id="pressure"></span>
                 </div>
 
-            <div class="info-item">
+            <div class="dayConditions">
                  <i class="wi wi-direction-up"></i> 
-                 <label class="titres">Température max:</label>
+                 <label class="condition">Température max:</label>
                  <span class="info-label" id="tempMax"></span>
                 </div>
 
-            <div class="info-item"> 
+            <div class="dayConditions"> 
                 <i class="wi wi-direction-down"></i>
-                 <label class="titres">Température min:</label>
+                 <label class="condition">Température min:</label>
                <span class="info-label" id="tempMin"></span>
             </div>
 
-            <div class="info-item"> 
+            <div class="dayConditions"> 
                 <i class="wi wi-sunset"></i> 
-                <label class="titres">Crépuscule:</label></i>
+                <label class="condition">Crépuscule:</label>
                 <span class="info-label" id="sunset"></span>
              </div> 
 
-            <div class="info-item"> 
-                <i class="wi wi-sunrise"></i> <label class="titres">Aube:</label>
+            <div class="dayConditions"> 
+                <i class="wi wi-sunrise"></i> 
+                <label class="condition">Aube:</label>
                 <span class="info-label" id="sunrise"></span>
                  </div>
-        </div>
-               
+              </div>                     
 
 </body>
 
-<!-- <script type="text/javascript">
-    alert('Vendredi 21/08/2020; 8h00 Bon courage pour le télétravail! :)')</script>
- <script type="text/javascript">
-    alert('Vendredi 21/08/2020; 12h; fin du télétravail projet presque finis!')</script> -->
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
