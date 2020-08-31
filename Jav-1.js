@@ -287,3 +287,11 @@ function initLunarPhase(){
   
   
   initLunarPhase();
+
+  $('#button-weather').click(function() {
+    $('#conditions-infos').toggle('');
+   } )
+  
+   $('#conditions-infos').toggle('');
+   
+    

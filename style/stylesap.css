@@ -61,6 +61,10 @@ img{
     width: 100%;
 }
 
+.menu{
+    position: relative;
+}
+
 body {
     background-image: url( https://ak.picdn.net/shutterstock/videos/23151766/thumb/1.jpg);
     background-size: cover;
@@ -92,10 +96,14 @@ body {
 } 
  
 h1{
-    color: #1f3f68;
+    color: #0b0c0e;
     font-style: italic;
+    font-size: 30px;
 }
 
+.button{
+    display:flex;
+}
 h1.full{
     width:100%;
     margin-top: 30px;
@@ -144,14 +152,14 @@ h1.full{
 }
 
 .current-weather.date{
-    background-color: #ce67438c;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,203,50,1) 0%, rgba(244,56,98,1) 100.2% );
 }
 
 .current-weather {
-    background-color: #eb9d43b0;
+    background-image: radial-gradient( circle 426px at 77.9% 31.3%,  rgba(255,229,131,1) 0%, rgba(249,119,0,1) 90% );
 }
 
-.conditions-infos{
+#conditions-infos{
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
@@ -163,28 +171,28 @@ h1.full{
 
 }
 
-.conditions-infos i{
+#conditions-infos i{
     font-size: 40px;
     color: #1f3f68;
 }
 
-.conditions-infos{
+#conditions-infos{
     background-color: #83a4b145;
     margin-top: 30px;
     padding: 30px;
 }
 
-.condition-infos .info-label {
+#condition-infos .info-label {
     font-size: 30px;
     font-style: italic;
     color:#082e52;
  }
 
- .conditions-infos .info-label {
+ #conditions-infos .info-label {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    color: #1f3f68;
+    color: #0e1825;
  }
 
  .current-weather .info-label{
@@ -199,3 +207,8 @@ h1.full{
     color:#1f3f68;
 } 
 
+#button-weather{
+    background-image: radial-gradient( circle farthest-corner at 24.7% 28.8%,  rgba(247,183,29,1) 1.9%, rgba(253,239,150,1) 97.7% );
+    color: black;
+
+}
